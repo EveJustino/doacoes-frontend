@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* ITENS */
+.item {
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin-top: 10px;
+  background: #fafafa;
+  border-radius: 6px;
+}
+
+/* PRIORIDADES */
+.item.alta {
+  border-color: red;
+}
+
+.item.media {
+  border-color: orange;
+}
+
+.item.baixa {
+  border-color: green;
+}
+
+.urgente {
+  color: red;
+  font-weight: bold;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+.form {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form button:hover {
+  background: #0056b3;
+}
